@@ -1,10 +1,99 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Cart</title>
-</head>
-<body>
+{% extends 'store/base.html' %}
+{% load static %}
 
-</body>
-</html>
+
+{% block content %}
+
+<div class="container-fluid">
+    <div class="row my-row">
+        <div class="card border-dark first-card">
+          <div class="card-header">
+              <button type="button" class="btn btn-outline-dark"><strong>&#8592;  Continue Shopping</strong></button>
+          </div>
+
+          <div class="card-body text-dark">
+              <div class="row" style="height: 60px;">
+                  <div class="col-lg-3">
+                      <strong>Items: 3</strong>
+                  </div>
+                  <div class="col-lg-3">
+                      <strong>Total:  50&#8377;</strong>
+                  </div>
+                  <div class="col-lg-6">
+                      <button type="button" class="btn btn-success" style="float: right;">Checkout</button>
+                  </div>
+              </div>
+          </div>
+
+        </div>
+    </div>
+
+
+    <div class="row my-row">
+        <div class="card border-dark mb-3 second-card">
+        <div class="row">
+
+            <div class="col-lg-3">
+              <div class="card-header text-dark"><strong>Image</strong></div>
+              <div class="card-body text-body customized-card-body">
+                <h5 class="card-title"></h5>
+              </div>
+            </div>
+
+            <div class="col-lg-3">
+              <div class="card-header text-dark"><strong>Item</strong></div>
+              <div class="card-body customized-card-body">
+                <h5 class="card-title">Product 1</h5>
+              </div>
+            </div>
+
+            <div class="col-lg-2">
+              <div class="card-header text-dark"><strong>Quantity</strong></div>
+              <div class="card-body customized-card-body">
+                <div class="card-title">
+                    <div class="row">
+                        <div class="col-sm-2"><strong>5</strong></div>
+                        <div class="col-sm-10">
+                            <div class="row"><a><strong>&#8896;</strong></a></div>
+                            <div class="row"><a><strong>&#8897;</strong></a></div>
+                        </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-2">
+              <div class="card-header text-dark"><strong>Price</strong></div>
+              <div class="card-body customized-card-body">
+                <h5 class="card-title">20&#8377;</h5>
+              </div>
+            </div>
+
+            <div class="col-lg-2">
+              <div class="card-header text-dark"><strong>Total</strong></div>
+              <div class="card-body customized-card-body">
+                <h5 class="card-title">30&#8377;</h5>
+              </div>
+            </div>
+
+        </div>
+        </div>
+    </div>
+</div>
+
+{% endblock content %}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

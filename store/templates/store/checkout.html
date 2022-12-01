@@ -1,10 +1,117 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Checkout</title>
-</head>
-<body>
+{% extends 'store/base.html' %}
+{% load static %}
 
-</body>
-</html>
+
+
+
+{% block content %}
+
+<div class="container-fluid">
+    <div class="row checkout-row">
+
+        <!------------------------------------------------ <Left Card> ------------------------------------------------>
+        <div class="col-lg-6 modified-card">
+            <div class="card">
+              <ul class="list-group list-group-flush">
+
+                <li class="list-group-item">
+                    <div class="row left-card-top-row">
+                        <div class="col-md-6"><input class="checkout-input" placeholder="Name"></div>
+                        <div class="col-md-6"><input class="checkout-input" placeholder="Email"></div>
+                    </div>
+                </li>
+
+                <li class="list-group-item left-card-second-row"><strong style="font-size: 1.2rem;">Shipping Information :</strong></li>
+
+                <li class="list-group-item">
+                    <div class="row left-card-third-row-1">
+                        <div class="col-md-6"><input class="checkout-input" placeholder="Address"></div>
+                        <div class="col-md-6"><input class="checkout-input" placeholder="Pin Code"></div>
+                    </div>
+                    <div class="row left-card-third-row-2">
+                        <div class="col-md-6"><input class="checkout-input" placeholder="City"></div>
+                        <div class="col-md-6"><input class="checkout-input" placeholder="State"></div>
+                    </div>
+                </li>
+
+              </ul>
+              <div class="card-footer d-grid left-card-bottom-row">
+                  <button class="btn btn-success" type="button">Continue</button>
+              </div>
+            </div>
+        </div>
+
+
+        <!----------------------------------------------- <Right Card> ----------------------------------------------->
+        <div class="col-lg-6">
+            <div class="card">
+              <ul class="list-group list-group-flush">
+
+                <li class="list-group-item right-card-top-row">
+                    <a class="btn btn-outline-dark" href="{% url 'cart' %}">
+                        <strong>&#8592;  Back to Cart</strong>
+                    </a>
+                </li>
+
+                <li class="list-group-item right-card-second-row">
+                    <div style="font-size: 34px;"><strong>Order Summary</strong></div>
+                </li>
+
+                <li class="list-group-item right-card-third-row">
+                    <div class="row">
+                        <div class="col-sm-4">Image</div>
+                        <div class="col-sm-3">Product 1</div>
+                        <div class="col-sm-3">50&#8377;</div>
+                        <div class="col-sm-2">&#215; 2</div>
+                    </div>
+                </li>
+
+              </ul>
+              <div class="card-footer right-card-bottom-row">
+                  <div class="row" style="padding: 4px 2px; font-size: 1.5rem;"><strong>Items: 2</strong></div>
+                  <div class="row" style="padding: 4px 2px; font-size: 1.5rem;"><strong>Total: 100&#8377;</strong></div>
+              </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+{% endblock content %}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
