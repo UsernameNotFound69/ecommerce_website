@@ -1,7 +1,7 @@
 from django.shortcuts import render
 
 
-# Create your views here.
+# This is views for the endpoints
 def store(request):
     context = {}
     return render(request, "store/store.html", context)
